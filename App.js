@@ -1,6 +1,7 @@
 import "react-native-gesture-handler";
 import Navigation from "./src/Navigation/Navigation";
 import { NavigationContainer } from "@react-navigation/native";
+import { registerRootComponent } from "expo";
 
 export default function App() {
   return (
@@ -9,3 +10,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
+registerRootComponent(App);
